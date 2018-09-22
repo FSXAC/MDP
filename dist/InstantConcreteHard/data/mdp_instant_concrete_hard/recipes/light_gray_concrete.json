@@ -1,0 +1,1 @@
+{"type": "crafting_shaped", "pattern": ["CCC", "CWC", "CCC"], "key": {"C": {"item": "minecraft:light_gray_concrete_powder"}, "W": {"item": "minecraft:slime_ball"}}, "result": {"item": "minecraft:light_gray_concrete", "count": 8}}

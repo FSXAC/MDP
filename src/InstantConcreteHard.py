@@ -5,7 +5,7 @@ import shutil
 from common.PackData import *
 from common.Recipe import *
 
-NAME = 'InstantConcreteHard'
+NAME = 'InstantConcrete'
 VERS = '1.0'
 
 CWD = os.getcwd()
@@ -30,7 +30,7 @@ def build():
 	path = os.path.join(CWD, 'dist', NAME)
 	dirList.append(path)
 
-	namespace = 'mdp_instant_concrete_hard'
+	namespace = 'mdp_instant_concrete'
 	recipesDir = os.path.join(path, 'data', namespace, 'recipes')
 	dirList.append(recipesDir)
 
@@ -63,9 +63,8 @@ def build():
 	]
 	PRE_CRAFT_SUFFIX = '_powder'
 	PATTERN = [
-		'CCC',
-		'CWC',
-		'CCC'
+		'CC',
+		'CC'
 	]
 
 	# For each variant make recipe
@@ -73,10 +72,9 @@ def build():
 		newRecipe = ShapedRecipe()
 		newRecipe.definePattern(PATTERN)
 		newRecipe.defineKey({
-			'C': block + PRE_CRAFT_SUFFIX,
-			'W': 'minecraft:slime_ball'
+			'C': block + PRE_CRAFT_SUFFIX
 		})
-		newRecipe.setResult(block, 8)
+		newRecipe.setResult(block, 4)
 
 		itemName = block.split(':')[-1]
 		makeRecipe(recipesDir, itemName, newRecipe)
