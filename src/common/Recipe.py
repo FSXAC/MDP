@@ -76,7 +76,7 @@ class ShapelessRecipe:
 
 	def setResult(self, result, count):
 		self.result = {
-			'item': self.result,
+			'item': result,
 			'count': count
 		}
 	
