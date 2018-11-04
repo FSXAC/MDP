@@ -1,1 +1,16 @@
-{"type": "crafting_shaped", "pattern": ["CC", "CC"], "key": {"C": {"item": "minecraft:red_concrete_powder"}}, "result": {"item": "minecraft:red_concrete", "count": 4}}
+{
+	"type": "crafting_shaped",
+	"pattern": [
+		"CC",
+		"CC"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:red_concrete_powder"
+		}
+	},
+	"result": {
+		"item": "minecraft:red_concrete",
+		"count": 4
+	}
+}

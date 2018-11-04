@@ -72,7 +72,11 @@ class ShapelessRecipe:
 		self.type = 'crafting_shapeless'
 	
 	def setIngredients(self, ingredients):
-		self.ingredients = ingredients
+		self.ingredients = []
+
+		# TODO: assuming there is no substitutive items, and only 'items'
+		for ingredient in ingredients:
+			self.ingredients.append({'item': ingredient})
 
 	def setResult(self, result, count):
 		self.result = {
@@ -84,7 +88,7 @@ class ShapelessRecipe:
 		data = {
 			'type': self.type,
 			'ingredients': self.ingredients,
-			'results': self.result
+			'result': self.result
 		}
 
 		return data
