@@ -65,3 +65,26 @@ class ShapedRecipe:
 		}
 
 		return data
+
+
+class ShapelessRecipe:
+	def __init__(self):
+		self.type = 'crafting_shapeless'
+	
+	def setIngredients(self, ingredients):
+		self.ingredients = ingredients
+
+	def setResult(self, result, count):
+		self.result = {
+			'item': self.result,
+			'count': count
+		}
+	
+	def getSerialized(self):
+		data = {
+			'type': self.type,
+			'ingredients': self.ingredients,
+			'results': self.result
+		}
+
+		return data
